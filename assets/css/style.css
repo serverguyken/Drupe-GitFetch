@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(54deg, #fdd231 60%, #0e153a 60%);
+  height: 100vh; */
+  background: #0e153a;
+}
+
+/* Main-content starts */
+.main-container h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.github-text a {
+  color: #fb8400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-container p {
+  text-align: center;
+  font-weight: medium;
+  font-size: 25px;
+  color: #fb860059;
+}
+/* Main content ends */
+
+
+/* Username Search starts */
+.search-container {
+  text-align: center;
+}
+
+.search-container input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 18px;
+  color: #fb8400;
+}
+
+.search-container ::placeholder {
+  color: #fb8400;
+  font-size: 20px;
+}
+
+:placeholder-shown {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.search-container :focus {
+  transition: 0.2s;
+  color: #fb8400;
+  top: 0;
+  border-width: 1px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+/* Username search ends */
+
+
+/* Search-button starts */
+.search-button a {
+  text-align: center;
+  background:#fff;
+  text-decoration: none;
+  font-size: 32px;
+  color: #000;
+  border-radius: 4px;
+  padding:8px;
+}
+
+.search-button a:hover {
+  background: #fb8400;
+  color: #fff;
+}
+/* Search button ends */
+
+
+/* Source code container starts */
+.source-code-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+
+.source-code-container a {
+  text-decoration: none;
+  color: #000000;
+  background: #fb8400;
+  font-size: 28px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* Second-container starts */
+.second-container {
+  background-image: url(../imgs/Sun-Tornado.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding: 80px;
+}
+
+.second-container h2 {
+  color: #0e153a;
+  font-size: 50px;
+}
+
+.second-container-text {
+  color: #fff;
+}
+
+.second-container p {
+  color: #0e153a;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Second-container ends */
+
+
+/* Main profile container starts */
+.main__profile-container {
+  
+  margin-top: 7rem;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto; }
+.main__profile-key {
+  color: #fb8400;
+  padding-bottom: 2rem; }
+.main__profile-value {
+  color: #fff; }
+
+/* Main prole coontainer ends */
+
+
+.line {
+      position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+      animation: typewriter 6s steps(40) 1s infinite normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e153a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdd231;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .search-container ::placeholder {
+    font-size: 16px;
+  }
+  .source-code-container a {
+    font-size: 16px;
+  }
+  .search-container :focus {
+    font-size: 14px;
+  }
+
+  .search-button a {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  .main-container h1{
+    font-size: 50px;
+  }
+}

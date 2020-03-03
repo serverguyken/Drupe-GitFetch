@@ -1,2 +1,2 @@
 # Drupe-GitFetch
-**Fetch GitHub users respos followers and more**
+**Use this to fetch GitHub users respos, followers and more**

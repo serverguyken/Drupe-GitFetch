@@ -35,7 +35,7 @@ const showData = () => {
 
         followersContainer.innerHTML = `Followers: <span class="main__profile-value">${res.data.followers}</span>`;
 
-        followingContainer.innerHTML = `Followers: <span class="main__profile-value">${res.data.following}</span>`;
+        followingContainer.innerHTML = `Following: <span class="main__profile-value">${res.data.following}</span>`;
 
         companyContainer.innerHTML =  `Company: <span class="main__profile-value">${res.data.company}</span>`;
 
